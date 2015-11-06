@@ -4,6 +4,14 @@ Flask-Mail Changelog
 Here you can see the full list of changes between each Flask-Mail release.
 
 
+Version 0.9.2
+-------------
+
+November 6 2015
+
+- Changed message MIMEMultipart type to related (support for inline images)
+
+
 Version 0.9.1
 -------------
 

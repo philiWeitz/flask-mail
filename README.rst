@@ -1,3 +1,11 @@
+Changes
+=======
+
+Changes in flask_mail.py
+- changed msg = MIMEMultipart() to msg = MIMEMultipart('related')
+- content-type related ensures that email clients (e.g. Thunderbird) show inline images correctly
+
+
 Flask-Mail
 ==========
 
