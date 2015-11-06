@@ -332,7 +332,7 @@ class Message(object):
             msg.attach(self._mimetext(self.body))
         else:
             # Anything else
-            msg = MIMEMultipart()
+            msg = MIMEMultipart('related')
             alternative = MIMEMultipart('alternative')
             alternative.attach(self._mimetext(self.body, 'plain'))
             for mimetype, content in self.alts.items():
